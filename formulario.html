@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanpage Breaking Bad</title>
+    <link rel="icon" type="image/png" href="./IMG/icon.png" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <!-- Esta section la añado un poco por semántica y porque no me gusta tener el body como contenedor -->
+    <section class="form_container">
+      <h1>Breaking Bad - Que comience el juego!</h1>
+      <!-- En este caso importa 0 el método, pero para hacerlo un poco más real especifico que tiene que ser método post -->
+      <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post">
+        <fieldset>
+          <label>
+            Nombre
+            <input name="Nombre" type="text" placeholder="Sancho" required />
+          </label>
+          <label>
+            Apellido
+            <input name="Apellido" type="text" placeholder="Panza" required />
+          </label>
+          <label for="Sexo">
+            Sexo
+            <div>
+              <input name="Sexo" type="radio" value="Hombre" /> Hombre
+              <input name="Sexo" type="radio" value="Mujer" /> Mujer
+            </div>
+          </label>
+
+          <label>
+            Fecha de nacimiento
+            <input name="Fecha de Nacimiento" type="date" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label>Calle <input name="Calle" type="text" /></label>
+          <label>Nº <input name="Nº" type="number" /></label>
+          <label>Piso <input name="Piso" type="text" /></label>
+          <label>Ciudad <input name="Ciudad" type="text" /> </label>
+          <label>
+            Postal Code
+            <input
+              name="Postal Code"
+              type="number"
+              placeholder="28005"
+              min="5"
+              max="5"
+            />
+          </label>
+          <label>DNI <input name="DNI" type="text" min="8" /></label>
+        </fieldset>
+
+        <fieldset>
+          <select name="Personajes">
+            <option value="Jessie Pinkman">Jesse Pinkman</option>
+            <option value="Walter White">Walter White</option>
+            <option value="Saul Goodman">Saul Goodman</option>
+            <option value="Gustavo Fring">Gustavo Fring</option>
+            <option value="Pollos Hermanos">Pollos Hermanos</option>
+            <option value="Otros personajes">Otros personajes</option>
+          </select>
+
+          <input
+            name="Email"
+            type="email"
+            placeholder="superemail@mail.com"
+            required
+          />
+          <textarea name="Tus comentarios"></textarea>
+          <input name="Archivo" type="file" />
+        </fieldset>
+
+        <div class="final-buttons">
+          <button value="Resetear">Resetear</button>
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
